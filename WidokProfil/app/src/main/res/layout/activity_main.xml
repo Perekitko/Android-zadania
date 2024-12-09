@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="213dp"
+        android:layout_height="170dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/btn_star_big_on" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="409dp"
+        android:layout_height="557dp"
+        android:layout_marginTop="9dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView">
+
+        <TextView
+            android:id="@+id/textViewImie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Imie"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/editTextImie"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:editable="false"
+            android:ems="10"
+            android:enabled="false"
+            android:inputType="text"
+            android:text="Jessica"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textViewNazwisko"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nazwisko"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/editTextNazwisko"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:enabled="false"
+            android:inputType="text"
+            android:text="Perekitko"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textViewLogin"
+            android:layout_width="69dp"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/editTextLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:enabled="false"
+            android:inputType="text"
+            android:text="Perekitko"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textViewEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/editTextEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:enabled="false"
+            android:inputType="textEmailAddress"
+            android:text="perekitko@op.pl"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/ButtonEdytuj"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Edytuj" />
+
+        <Button
+            android:id="@+id/ButtonWyswietl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Wyswietl" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Twoje imie:"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/textViewEdycjaImie"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Twoje nazwisko"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/textViewEdycjaNazwisko"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Twj login"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/textViewEdycjaLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Twoj email"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/textViewEdycjaEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
